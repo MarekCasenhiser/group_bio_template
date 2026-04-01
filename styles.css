@@ -98,7 +98,7 @@ button:hover {
     border-style: solid; /* Add a border around the image */
     margin-top: 10px; /* Add some space above the image */
 }
-
+/*styling for Nigel's card */
 #nigel-card {
     background-image: url('img/sheeps\ image.jpg');
     background-size: cover;
@@ -106,18 +106,19 @@ button:hover {
     background-repeat: no-repeat;
     animation: pan 12s ease-in-out infinite alternate;
 }
-
+/* animation for the background of Nigel's card */
 @keyframes pan {
     from { background-position: left center; }
     to   { background-position: right center; }
 }
+/* styling for Nigel's bio */
 #bio2 {
     color:#0d0808; /* Dark gray text for better readability */
     padding: 10px;
     border-radius: 8px;
     font-weight: bold;
 }
-
+/* styling for the button to show Nigel's bio */
 #nigel-bio-btn {
     background-color: #000000; /* Green button */
     margin-top: 10px;
