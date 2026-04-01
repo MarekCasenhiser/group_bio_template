@@ -88,3 +88,37 @@ button {
 button:hover {
     background: #0056b3;
 }
+
+
+/*Nigel's card picture styling */
+.card-image {
+    width: 75%; /* Make the image take the full width of the card */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: add rounded corners to the image */
+    border-style: solid; /* Add a border around the image */
+    margin-top: 10px; /* Add some space above the image */
+}
+
+#nigel-card {
+    background-image: url('img/sheeps\ image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: pan 12s ease-in-out infinite alternate;
+}
+
+@keyframes pan {
+    from { background-position: left center; }
+    to   { background-position: right center; }
+}
+#bio2 {
+    color:#0d0808; /* Dark gray text for better readability */
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+#nigel-bio-btn {
+    background-color: #000000; /* Green button */
+    margin-top: 10px;
+}
