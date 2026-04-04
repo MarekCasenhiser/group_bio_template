@@ -64,6 +64,14 @@ header nav button:hover {
     transform: scale(1.05);
 }
 
+#Vidhi {
+    border-top: 10px solid hwb(330 13% 57%);
+    /* Example: Hot Pink */
+    border-bottom: 10px solid hwb(330 13% 57%);
+    background-color: #d0cdef;
+    /* Optional: light tinted background for uniqueness */
+}
+
 h2 {
     margin: 0 0 10px;
 }

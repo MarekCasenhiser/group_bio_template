@@ -43,14 +43,19 @@ function showSection(sectionId) {
 }
 
 // Function to toggle individual bio text
-function toggleBio(bioId) {
+function toggleBio(bioId, button) {
     const bio = document.getElementById(bioId);
+
+    // Toggle the bio visibility
     if (bio.style.display === "block") {
         bio.style.display = "none";
+        if (button) button.textContent = "Show Bio";
     } else {
         bio.style.display = "block";
+        if (button) button.textContent = "Hide Bio";
     }
 }
+
 
 // --- Vidhi's Mood Board Functions ---
 
