@@ -1,83 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Bio</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
 </head>
-
 <body>
 
-    <header>
-        <h1>Team Moonvines</h1>
-        <!-- Ensure team-logo.png is inside your img folder -->
-        <img src="img/team-logo.png" alt="Team Logo" class="team-logo">
+<header>
+    <h1>Team Moonvines</h1>
+    <!-- Example team logo -->
+    <img src="img/team-logo.png" alt="Team Logo" class="team-logo">
 
-        <nav>
-            <button onclick="showSection('bios')">Team Bios</button>
-            <button onclick="showSection('vision')">Team Vision</button>
-        </nav>
-    </header>
+    <!-- Navigation menu to switch between sections -->
+    <nav>
+        <button onclick="showSection('bios')">Team Bios</button>
+        <button onclick="showSection('vision')">Team Vision</button>
+    </nav>
+</header>
 
-    <!-- Team bios section -->
-    <div id="bios" class="container">
-
-        <div class="card">
-            <h2>Marek Casenhsier</h2>
-            <p>Frontend Developer</p>
-            <button onclick="toggleBio('bio1')">Show Bio</button>
-            <p id="bio1" class="bio">Nice to meet you! I am a junior cybersecurity major working in his undergraduate
-                year. I am currently working as a teaching assistant for a data structures professor at UNC charlotte.
-                My technical hobbies include programming, CTF challenges, and leetcode problems.</p>
-        </div>
-
-        <div class="card">
-            <h2>Nigel Smith</h2>
-            <p>Backend Developer</p>
-            <button onclick="toggleBio('bio2')">Show Bio</button>
-            <p id="bio2" class="bio"></p>
-        </div>
-
-        <div class="card">
-            <h2>Sree Inuganti</h2>
-            <p>UI/UX Designer</p>
-            <button onclick="toggleBio('bio3')">Show Bio</button>
-            <p id="bio3" class="bio">Emily is a UI/UX designer with a passion for creating user-friendly interfaces.</p>
-        </div>
-
-        <div class="card">
-            <h2>Noah Harden</h2>
-            <p>Frontend Developer</p>
-            <button onclick="toggleBio('bio4')">Show Bio</button>
-            <p id="bio4" class="bio">John is a skilled frontend developer with 5 years of experience in creating
-                responsive web applications.</p>
-        </div>
-
-        <div id="Vidhi" class="card">
-            <h2>Vidhi Gupte</h2>
-            <p>Product Manager</p>
-            <!-- UPDATED FILENAME TO MATCH YOUR DESCRIPTION -->
-            <img src="img/vidhi_gupte_image.png" alt="Vidhi Gupte" width="100">
-            <button onclick="toggleBio('bio5')">Show Bio</button>
-            <p id="bio5" class="bio">Hey there! I'm Vidhi, and I am a junior computer science major, concentrating in
-                Systems & Networks. I also am minoring in Psychology, and I love learning the applications of both
-                fields and the connection they have. Outside of academics, I enjoy spending quality time with my family
-                and friends, especially during weekend get-togethers!</p>
-        </div>
-
-    </div> <!-- Properly closing the container after all cards -->
-
-    <!-- Team vision/mission statement section -->
-    <div id="vision" class="container" style="display: none;">
-        <h2>Our Mission Statement</h2>
-        <p>We strive to create a collaborative, inclusive, and innovative environment where team members feel empowered
-            to push boundaries and achieve excellence in their craft.</p>
+<!-- Team bios section (default section) -->
+<div id="bios" class="container">
+    <!-- Each card represents an individual team member -->
+    <div class="card">
+        <h2>Marek Casenhsier</h2>
+        <p>Frontend Developer</p>
+        <button onclick="toggleBio('bio1')">Show Bio</button>
+        <p id="bio1" class="bio">Nice to meet you! I am a junior cybersecurity major working in his undergraduate year. I am currently working as a teaching assistant for a data structures professor at UNC charlotte. My technical hobbies include programming, CTF challenges, and leetcode problems.</p>
     </div>
+    <div class="card">
+        <h2>Nigel Smith</h2>
+        <p>Backend Developer</p>
+        <button onclick="toggleBio('bio2')">Show Bio</button>
+        <p id="bio2" class="bio"></p>
+    </div>
+    <div class="card">
+        <h2>Sree Inuganti</h2>
+        <p>UI/UX Designer</p>
+        <button onclick="toggleBio('bio3')">Show Bio</button>
+        <p id="bio3" class="bio">Emily is a UI/UX designer with a passion for creating user-friendly interfaces.</p>
+    </div>
+    <div class="card">
+        <h2>Noah Harden</h2>
+        <p>Frontend Developer</p>
+        <button onclick="toggleBio('bio4')">Show Bio</button>
+        <p id="bio4" class="bio">John is a skilled frontend developer with 5 years of experience in creating responsive web applications.</p>
+    </div>
+    <div id="Vidhi" class="card">
+        <h2>Vidhi Gupte</h2>
+        <p>Product Manager</p>
+        <img src="img/vidhi_gupte_image.png" width="100">
+        <button onclick="toggleBio('bio5')">Show Bio</button>
+        <p id="bio5" class="bio">Hey there! I'm Vidhi, and I am a junior computer science major, concentrting in Systems & Networks. I also am minoring in Psychology, and I love learning the applications of both fields and the connection they have. Outside of academics, I enjoy spending quality time with my family and friends, especially during weekend get-togethers!</p>
+    </div>
+<!-- Team vision/mission statement section (hidden by default) -->
+<div id="vision" class="container" style="display: none;">
+    <h2>Our Mission Statement</h2>
+    <p>We strive to create a collaborative, inclusive, and innovative environment where team members feel empowered to push boundaries and achieve excellence in their craft. Our mission is to deliver high-quality solutions that meet and exceed our clients' expectations.</p>
+</div>
 
-    <script src="script.js"></script> <!-- Link to external JavaScript file -->
+<script src="script.js"></script> <!-- Link to external JavaScript file -->
 
 </body>
-
 </html>
