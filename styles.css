@@ -146,6 +146,7 @@ button:hover {
     object-fit: cover;
     border-radius: 6px;
     border: 2px solid rgba(0, 0, 0, 0.15);
+}
 /* Style for the Mood Board image inside the card */
 .mood-board-image {
     width: 100%;
@@ -166,6 +167,8 @@ button:hover {
 .modal5 {
     display: none;
     /* This hides the big image by default */
+    background-color: rgba(148, 12, 144, 0.3);
+}
 #Noah {
     background-image: url("https://i.etsystatic.com/18279207/r/il/a86640/5022640521/il_fullxfull.5022640521_rzps.jpg");
     background-size: cover;
@@ -320,8 +323,6 @@ button:hover {
     font-size: 40px;
     font-weight: bold;
     cursor: pointer;
-}
-    background-color: rgba(148, 12, 144, 0.3);
 }
 
 /* Opened Image */
