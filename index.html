@@ -88,12 +88,34 @@
             I have a varied experience in all computing fields, and at the moment I have a personal focus on servers and backend.
         </p>
     </div>
-    <div class="card">
+    <div id="Vidhi" class="card">
         <h2>Vidhi Gupte</h2>
-        <p>Frontend Developer</p>
-        <button onclick="toggleBio('bio5')">Show Bio</button>
-        <p id="bio5" class="bio">John is a skilled frontend developer with 5 years of experience in creating responsive web applications.</p>
+        <p>Product Manager</p>
+        <img src="img/vidhi_gupte_image.png" width="100" style="display: block; margin: 0 auto 10px;">
+        <button onclick="toggleBio('bio5', this)">Show Bio</button>
+        <p id="bio5" class="bio">Hey there! I'm Vidhi, and I am a junior computer science major, concentrating in Systems &
+            Networks. I also am minoring in Psychology, and I love learning the applications of both fields and the
+            connection they have. Outside of academics, I enjoy spending quality time with my family and friends, especially
+            during weekend get-togethers!
+            <br><br>
+            <strong>Below is my GitHub profile:</strong>
+            <a href="https://github.com/vidhipgupte05" target="_blank">My GitHub</a>
+            <br><br>
+            <img src="img/VidhiGupteMoodBoard.png" 
+                alt="Mood Board - Vidhi Gupte" 
+                class="mood-board-image"
+                onclick="openMoodBoard5()" 
+                style="cursor: pointer; width: 200px; margin-top: 10px;">
+        </p>
     </div>
+
+<div id="moodBoard5Modal" class="modal5">
+    <span class="close5" onclick="closeMoodBoard5()">&times;</span>
+    <img class="modal-content5" id="moodBoard5ModalContent" src="img/VidhiGupteMoodBoard.png">
+</div>
+    
+    
+    
 <!-- Close the Bios </div> here? -->
 
 <!-- Team vision/mission statement section (hidden by default) -->
