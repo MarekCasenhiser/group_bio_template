@@ -97,7 +97,6 @@ button:hover {
     background: #0056b3;
 }
 
-
 /*Nigel's card picture styling */
 .card-image {
     width: 75%; /* Make the image take the full width of the card */
@@ -106,6 +105,7 @@ button:hover {
     border-style: solid; /* Add a border around the image */
     margin-top: 10px; /* Add some space above the image */
 }
+
 /*styling for Nigel's card */
 #nigel-card {
     background-image: url('img/sheeps\ image.jpg');
@@ -114,11 +114,13 @@ button:hover {
     background-repeat: no-repeat;
     animation: pan 12s ease-in-out infinite alternate;
 }
+
 /* animation for the background of Nigel's card */
 @keyframes pan {
     from { background-position: left center; }
     to   { background-position: right center; }
 }
+
 /* styling for Nigel's bio */
 #bio2 {
     color:#0d0808; /* Dark gray text for better readability */
@@ -126,10 +128,12 @@ button:hover {
     border-radius: 8px;
     font-weight: bold;
 }
+
 /* styling for the button to show Nigel's bio */
 #nigel-bio-btn {
     background-color: #000000; /* Green button */
-    margin-top: 10px;
+    margin: 10px auto 0;
+    display: block;
 }
 
 /* styling for Nigel's moodboard section */
@@ -139,6 +143,7 @@ button:hover {
     gap: 8px;
     margin-top: 12px;
 }
+
 /* styling for the images in Nigel's moodboard images*/
 .moodboard img {
     width: 100%;
@@ -146,6 +151,8 @@ button:hover {
     object-fit: cover;
     border-radius: 6px;
     border: 2px solid rgba(0, 0, 0, 0.15);
+}
+
 /* Style for the Mood Board image inside the card */
 .mood-board-image {
     width: 100%;
@@ -166,6 +173,9 @@ button:hover {
 .modal5 {
     display: none;
     /* This hides the big image by default */
+    background-color: rgba(148, 12, 144, 0.3);
+}
+
 #Noah {
     background-image: url("https://i.etsystatic.com/18279207/r/il/a86640/5022640521/il_fullxfull.5022640521_rzps.jpg");
     background-size: cover;
@@ -184,10 +194,11 @@ button:hover {
 }
 
 #Noah p {
-    font-size: 20px;
-    color: white;
-    -webkit-text-stroke: 0.3px black;
+    font-size: 21px;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 0.5px rgb(0, 0, 0);
 }
+
 /*Sree's Card Styling*/
 .card3 {
     background: rgb(203, 151, 225);
@@ -197,7 +208,7 @@ button:hover {
     padding: 20px;
     flex: 1 1 calc(15% - 30px);
     transition: transform 0.3s, box-shadow 0.3s;
-    max-width: 600px;
+    max-width: 700px;
     width: 100%;
 }
 
@@ -209,7 +220,9 @@ button:hover {
 /* FLEX CONTENT */
 .card3-content {
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     gap: 10px;
 }
 
@@ -276,7 +289,7 @@ button:hover {
 /* Sree's Moodboard Styling */
 .moodboard3-preview {
     display: block;
-    margin: 25px;
+    margin: 25px auto;
     width: 200px;
     border-radius: 12px;
     border: 2px solid white;
@@ -298,7 +311,7 @@ button:hover {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color:#8614bf8b;
     /* Black background with opacity */
 }
 
@@ -321,15 +334,14 @@ button:hover {
     font-weight: bold;
     cursor: pointer;
 }
-    background-color: rgba(148, 12, 144, 0.3);
-}
 
 /* Opened Image */
 .modal3-content {
+    margin: auto;
     display: block;
-    margin: 5% auto;
-    max-width: 80%;
-    border-radius: 10px;
+    width: 80%;
+    max-width: 1000px;
+    margin-top: 80px;
 }
 
 /* Close button */
